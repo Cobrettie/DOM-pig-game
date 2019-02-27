@@ -83,7 +83,7 @@ function nextPlayer() {
 
 // adding eventListener for btn-new // creating a new game when button is pressed
 
-document.querySelector('.btn-new').addEventListener('click', init());
+document.querySelector('.btn-new').addEventListener('click', init);
 
 
 function init() {
@@ -99,6 +99,21 @@ function init() {
     document.getElementById("current-1").textContent = "0";
     document.getElementById('name-0').textContent = 'Player 1';
     document.getElementById('name-1').textContent = 'Player 2';
+
+
+    // remove winner class after user has won
+
+
+    document.querySelector('.player-0-panel').classList.remove('winner');
+    document.querySelector('.player-1-panel').classList.remove('winner');
+    document.querySelector('.player-0-panel').classList.remove('active');
+    document.querySelector('.player-1-panel').classList.remove('active');
+
+    // made player 0 active
+    document.querySelector('.player-0-panel').classList.add('active');
+    //
+
+
 
 }
 
