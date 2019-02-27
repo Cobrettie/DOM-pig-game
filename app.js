@@ -55,7 +55,15 @@ document.querySelector(".btn-hold").addEventListener("click", function () {
     document.querySelector("#score-" + activePlayer).textContent = scores[activePlayer];
 
     // CHECK if player WON the game
-
+    if (scores[activePlayer] >= 10) {
+        document.querySelector("#name-" + activePlayer).textContent = "WINNER!";
+        document.querySelector(".dice").style.display = 'none';
+        document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
+        document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+    } else {
+        // next player 
+        nextPlayer();
+    }
 
     // next player
     nextPlayer();
