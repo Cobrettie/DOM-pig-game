@@ -45,7 +45,32 @@ body {
     padding: 100px;
 }
 
+/* --------- Winning Score custom ---------- */
+.form-group {
+    position: absolute;
+    top: 75px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
 
+.form-group label {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+}
+
+input[type="text"] {
+    width: 200px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+    border: 1px solid #373737;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
 
 /**********************************************
 *** PLAYERS
@@ -148,7 +173,7 @@ i {
 }
 
 .btn-new {
-    top: 45px;
+    top: 35px;
 }
 
 .btn-roll {
@@ -157,6 +182,16 @@ i {
 
 .btn-hold {
     top: 467px;
+}
+
+input {
+    top: 505px;
+}
+
+#userWinningValue {
+    text-align: center;
+    margin: 0 50px 60px 50px;
+
 }
 
 .dice {
